@@ -1,0 +1,52 @@
+package com.emp;
+
+import java.util.Scanner;
+
+public class Main {
+    public static Scanner sc= new Scanner(System.in);
+    static int num;
+    static int max=20;
+
+    static int[] EmpTable = new int[max];
+
+    public static void menu(){
+        while(true){
+            System.out.println("-------------------------"
+                    + "Employee"
+                    + " Management System"
+                    + "-------------------------\n");
+
+            System.out.println("Available Options:\n");
+            System.out.print("Build Table         (1)\n");
+            System.out.print("Insert New Entry    (2)\n");
+            System.out.print("Delete Entry        (3)\n");
+            System.out.print("Search a Record     (4)\n");
+            System.out.print("Exit                (5)\n");
+            int n=sc.nextInt();
+            switch(n){
+                case 1->{
+                    BuildTable.buildTable();
+                }
+//            case 2->{
+//                insert();
+//            }
+//            case 3->{
+//                delete();
+//            }
+//            case 4->{
+//                search();
+//            }
+//            case 5->{
+//                return;
+//            }
+                default ->  {
+                    System.out.println("Expected Options" + " are 1/2/3/4/5");
+                    menu();
+                }
+            }
+        }
+    }
+    public static void main(String[] args) {
+        menu();
+    }
+}
