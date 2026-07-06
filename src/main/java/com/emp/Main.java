@@ -30,9 +30,10 @@ public class Main {
             case 2->{
                 Insert.insert();
             }
-//            case 3->{
-//                delete();
-//            }
+            case 3->{
+                    int empid=sc.nextInt();
+                    Delete.delete(empid);
+            }
 //            case 4->{
 //                search();
 //            }
