@@ -7,7 +7,7 @@ public class Main {
     static int num;
     static int max=20;
 
-    static int[] EmpTable = new int[max];
+    static Employee[] EmpTable = new Employee[max];
 
     public static void menu(){
         while(true){

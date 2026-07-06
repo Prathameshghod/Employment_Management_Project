@@ -8,12 +8,13 @@ public class BuildTable {
         int n=Main.sc.nextInt();
         System.out.println("Enter the no. of Entries "+ n);
 
-        if(maxi>20){
+        if(n>maxi){
             System.out.println("max entries are "+maxi);
             n=maxi;
         }
-        for(int i=0;i<maxi;i++){
-            Main.EmpTable[i].Employee.name=Main.sc.next();
+        for(int i=0;i<n ;i++){
+            Main.EmpTable[i]=new Employee();
+
         }
     }
 }
