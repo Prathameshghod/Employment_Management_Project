@@ -27,9 +27,9 @@ public class Main {
                 case 1->{
                     BuildTable.buildTable();
                 }
-//            case 2->{
-//                insert();
-//            }
+            case 2->{
+                Insert.insert();
+            }
 //            case 3->{
 //                delete();
 //            }
