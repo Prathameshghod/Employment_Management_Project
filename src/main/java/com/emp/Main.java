@@ -1,6 +1,5 @@
 package com.emp;
 
-import javax.naming.directory.SearchControls;
 import java.util.Scanner;
 
 public class Main {
@@ -41,9 +40,9 @@ public class Main {
                 int empid=sc.nextInt();
                 SearchEmployee.search(empid);
             }
-//            case 5->{
-//                return;
-//            }
+            case 5->{
+                return;
+            }
                 default ->  {
                     System.out.println("Expected Options" + " are 1/2/3/4/5");
                 }

@@ -17,7 +17,7 @@
                 Main.EmpTable[i]=Main.EmpTable[i+1];
             }
             Main.EmpTable[n-1]=null;
-            n--;
+            Main.num--;
             System.out.println("Deleted Employee");
         }
     }

@@ -10,6 +10,10 @@ public class SearchEmployee {
                 break;
             }
         }
+        if(idx==-1){
+            System.out.println("Employee Not Found");
+            return;
+        }
         System.out.println("Empid" + Main.EmpTable[idx].Empid);
         System.out.println("Name" + Main.EmpTable[idx].name);
         System.out.println("Designation" + Main.EmpTable[idx].designation);

@@ -26,7 +26,7 @@ public class Insert {
             System.out.print("Enter Age: ");
             Main.EmpTable[n].age = Main.sc.nextInt();
         }
-        Main.num=n;
+        Main.num++;
         System.out.println("Inserted");
     }
 }
