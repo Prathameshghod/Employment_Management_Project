@@ -41,7 +41,6 @@ public class Main {
 //            }
                 default ->  {
                     System.out.println("Expected Options" + " are 1/2/3/4/5");
-                    menu();
                 }
             }
         }

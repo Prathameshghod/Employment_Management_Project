@@ -13,8 +13,26 @@ public class BuildTable {
             n=maxi;
         }
         for(int i=0;i<n ;i++){
-            Main.EmpTable[i]=new Employee();
+            Main.EmpTable[i] = new Employee();
 
+            System.out.println("\nEmployee " + (i + 1));
+
+            System.out.print("Enter Employee ID: ");
+            Main.EmpTable[i].Empid = Main.sc.nextInt();
+
+            System.out.print("Enter Name: ");
+            Main.EmpTable[i].name = Main.sc.next();
+
+            System.out.print("Enter Designation: ");
+            Main.EmpTable[i].designation = Main.sc.next();
+
+            System.out.print("Enter Experience: ");
+            Main.EmpTable[i].exp = Main.sc.nextInt();
+
+            System.out.print("Enter Age: ");
+            Main.EmpTable[i].age = Main.sc.nextInt();
         }
+        Main.num=n;
+        System.out.println("Employee Table Built Successfully");
     }
 }
