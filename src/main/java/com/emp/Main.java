@@ -36,7 +36,7 @@ public class Main {
                     Delete.delete(empid);
             }
             case 4->{
-                System.out.print("Enter Employee ID to delete: ");
+                System.out.print("Enter Employee ID to search: ");
                 int empid=sc.nextInt();
                 SearchEmployee.search(empid);
             }

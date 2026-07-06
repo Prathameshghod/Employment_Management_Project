@@ -1,8 +1,13 @@
 package com.emp;
 
+import java.util.Arrays;
+
 public class BuildTable {
     public static void buildTable(){
         int maxi=Main.max;
+
+        Arrays.fill(Main.EmpTable, null);
+
         System.out.println("Build the table");
         System.out.println("Max entries can be "+maxi);
 
