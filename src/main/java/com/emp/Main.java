@@ -1,5 +1,6 @@
 package com.emp;
 
+import javax.naming.directory.SearchControls;
 import java.util.Scanner;
 
 public class Main {
@@ -31,12 +32,15 @@ public class Main {
                 Insert.insert();
             }
             case 3->{
+                System.out.print("Enter Employee ID to delete: ");
                     int empid=sc.nextInt();
                     Delete.delete(empid);
             }
-//            case 4->{
-//                search();
-//            }
+            case 4->{
+                System.out.print("Enter Employee ID to delete: ");
+                int empid=sc.nextInt();
+                SearchEmployee.search(empid);
+            }
 //            case 5->{
 //                return;
 //            }
