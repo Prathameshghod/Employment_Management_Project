@@ -22,19 +22,19 @@ public class BuildTable {
             System.out.println("\n---------- Employee " + (i + 1) + " ----------");
 
             System.out.print("Enter Employee ID: ");
-            Main.EmpTable[i].Empid = Main.sc.nextInt();
+            Main.EmpTable[i].setEmpid(Main.sc.nextInt());
 
-            System.out.print("Enter Name: ");
-            Main.EmpTable[i].name = Main.sc.next();
+            System.out.print("Enter Employee Name: ");
+            Main.EmpTable[i].setName(Main.sc.next());
 
             System.out.print("Enter Designation: ");
-            Main.EmpTable[i].designation = Main.sc.next();
+            Main.EmpTable[i].setDesignation(Main.sc.next());
 
             System.out.print("Enter Experience: ");
-            Main.EmpTable[i].exp = Main.sc.nextInt();
+            Main.EmpTable[i].setExp(Main.sc.nextInt());
 
             System.out.print("Enter Age: ");
-            Main.EmpTable[i].age = Main.sc.nextInt();
+            Main.EmpTable[i].setAge(Main.sc.nextInt());
         }
         Main.num = n;
         System.out.println("\n=================================");

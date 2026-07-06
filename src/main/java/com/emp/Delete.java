@@ -5,7 +5,7 @@
             int n=Main.num;
             int idx=-1;
             for(int i=0;i<n;i++){
-                if(Main.EmpTable[i].Empid==id){
+                if(Main.EmpTable[i].getEmpid()==id){
                     idx=i;
                     break;
                 }
@@ -18,6 +18,7 @@
             }
             Main.EmpTable[n-1]=null;
             Main.num--;
-            System.out.println("Deleted Employee");
+            System.out.println("Employee Deleted Successfully!");
+            System.out.println("Total Employees : " + Main.num);
         }
     }

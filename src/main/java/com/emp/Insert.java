@@ -14,11 +14,11 @@ public class Insert {
         System.out.println("\n---------- Enter Employee Details ----------");
 
             System.out.print("Enter Employee ID: ");
-            Main.EmpTable[n].Empid = Main.sc.nextInt();
+        Main.EmpTable[Main.num].setEmpid(Main.sc.nextInt());
 
             for (int i = 0; i < Main.num; i++) {
 
-                if (Main.EmpTable[i].Empid == Main.EmpTable[Main.num].Empid) {
+                if (Main.EmpTable[i].getEmpid() == Main.EmpTable[Main.num].getEmpid()) {
                     System.out.println("Employee ID already exists!");
                     Main.EmpTable[Main.num] = null;
                     return;
@@ -26,16 +26,16 @@ public class Insert {
             }
 
             System.out.print("Enter Name: ");
-            Main.EmpTable[n].name = Main.sc.next();
+        Main.EmpTable[Main.num].setName(Main.sc.next());
 
             System.out.print("Enter Designation: ");
-            Main.EmpTable[n].designation = Main.sc.next();
+        Main.EmpTable[Main.num].setDesignation(Main.sc.next());
 
             System.out.print("Enter Experience: ");
-            Main.EmpTable[n].exp = Main.sc.nextInt();
+        Main.EmpTable[Main.num].setExp(Main.sc.nextInt());
 
             System.out.print("Enter Age: ");
-            Main.EmpTable[n].age = Main.sc.nextInt();
+        Main.EmpTable[Main.num].setAge(Main.sc.nextInt());
 
         Main.num++;
         System.out.println("\nEmployee Inserted Successfully!");

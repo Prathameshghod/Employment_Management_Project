@@ -5,7 +5,7 @@ public class SearchEmployee {
         int n=Main.num;
         int idx=-1;
         for(int i=0;i<n;i++){
-            if(Main.EmpTable[i].Empid==id){
+            if(Main.EmpTable[i].getEmpid()==id){
                 idx=i;
                 break;
             }
@@ -14,10 +14,14 @@ public class SearchEmployee {
             System.out.println("Employee Not Found");
             return;
         }
-        System.out.println("Empid" + Main.EmpTable[idx].Empid);
-        System.out.println("Name" + Main.EmpTable[idx].name);
-        System.out.println("Designation" + Main.EmpTable[idx].designation);
-        System.out.println("age" + Main.EmpTable[idx].age);
-        System.out.println("Experience" + Main.EmpTable[idx].exp);
+        System.out.println("\n========== Employee Found ==========");
+
+        System.out.println("Employee ID   : " + Main.EmpTable[idx].getEmpid());
+        System.out.println("Name          : " + Main.EmpTable[idx].getName());
+        System.out.println("Designation   : " + Main.EmpTable[idx].getDesignation());
+        System.out.println("Experience    : " + Main.EmpTable[idx].getExp() + " Years");
+        System.out.println("Age           : " + Main.EmpTable[idx].getAge());
+
+        System.out.println("====================================");
     }
 }
